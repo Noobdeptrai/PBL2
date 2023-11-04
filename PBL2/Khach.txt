@@ -1,0 +1,14 @@
+Nguyen Van Nam;01/10/1985; 4601 1
+Le Thi Hang;02/10/1969; 5345 0
+Hoang Kim Tuan;27/09/1970; 4532 1
+Nguyen Van Dung;30/09/1988; 5342 1
+Le Anh Khoa;29/09/1985; 6243 1
+Phan Thanh Minh;02/10/1974; 3423 1
+Duong Phuong Nhi;01/10/2004; 2123 0
+Truong Minh Anh;28/09/1999; 4213 0
+Dinh Van Phat;25/09/1995; 5234 1 
+Pham Huy Hoang;30/09/2000; 2341 1
+Mai Thi Truc;03/10/1983; 2342 0
+Vo Van Vu;29/09/1979; 3534 1
+Nguyen Thi Tien;26/09/1972; 4720 0
+Bui Kieu Trinh;01/10/1975; 6234 0
