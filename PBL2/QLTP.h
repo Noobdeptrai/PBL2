@@ -1,6 +1,8 @@
 #ifndef QLTP_H
 #define QLTP_H
+#include "QLP.h"
 #include "PhieuTraPhong.h"
+#include "QLDK.h"
 
 class QLTP
 {
@@ -11,9 +13,11 @@ class QLTP
 		QLTP();
 		QLTP(int);
 		~QLTP();
-		void doc_file(ifstream&);
+		void doc_file(ifstream&, QLP&, QLDK&);
 		PhieuTraPhong& operator[](const int&);
 		friend ostream& operator<<(ostream&, const QLTP&);
+		void Remove(int);
+		int getSize();
 };
 
 #endif

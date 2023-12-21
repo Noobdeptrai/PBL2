@@ -2,6 +2,7 @@
 #define PHONG_H
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 #include <string>
 using namespace std;
 class Phong
@@ -13,6 +14,7 @@ class Phong
 		Phong();
 		Phong(string, bool);
 		~Phong();
+		char getLoaiPhong();
 		string getSoPhong();
 		bool getTinhTrang();
 		void setTinhTrang(bool);

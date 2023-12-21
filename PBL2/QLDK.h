@@ -15,6 +15,8 @@ class QLDK
 		void doc_file(ifstream&, QLP&);
 		PhieuDangKy& operator[](const int&);
 		friend ostream& operator<<(ostream&, const QLDK&);
+		void Remove(int maKH);
+		int getSize();
 };
 
 #endif

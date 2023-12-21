@@ -1,6 +1,9 @@
 #ifndef KHACH_H
 #define KHACH_H
 #include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <cstring>
 using namespace std;
 
 //Phòng: số phòng, đơn giá, tình trạng, loại phòng
@@ -20,7 +23,10 @@ class Khach
 		~Khach();
 		void doc_1_khach(ifstream&);
 		friend ostream& operator<<(ostream&, const Khach&);
-		
+		string getTen();
+		int getMaKH();
+		int getGioiTinh();
+		string getNgaySinh();
 };
 
 #endif

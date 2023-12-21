@@ -23,11 +23,44 @@ ostream& operator<<(ostream& o, const QLP& ds){
 		o << "Nothing!" << endl;
 		return o;
 	}
-	o << "\n";
-	
-	for(int i = 0; i < ds.size; ++i){
-		o << ds.p[i] << endl;
+	o << "\n"; 
+	int index1, index2, index3;
+	for(int j = 0; j < ds.size; ++j){
+		if(ds.p[j].getLoaiPhong() == 'B'){
+			index1 = j; //cout << j << endl;
+			break;
+		}
 	}
+	for(int j = 0; j < ds.size; ++j){
+		if(ds.p[j].getLoaiPhong() == 'C'){
+			index2 = j; //cout << j << endl;
+			break;
+		}
+	}
+	for(int j = 0; j < ds.size; ++j){
+		if(ds.p[j].getLoaiPhong() == 'D'){
+			index3 = j; //cout << j << endl;
+			break;
+		}
+	}
+	o << left << setw(8) << "Phong" << "|" << setw(15) << "Tinh trang"
+	<< "\t\t" << setw(8) << "Phong" << "|" << setw(15) << "Tinh trang"
+	<< "\t\t" << setw(8) << "Phong" << "|" << setw(15) << "Tinh trang"
+	<< "\t\t" << setw(8) << "Phong" << "|" << setw(15) << "Tinh trang" << endl;
+	int j = index1, k = index2, h = index3;
+	for(int i = 0; i < j; ++i){
+		o << left << ds.p[i] << "\t\t" << ds.p[j] << "\t\t"
+		<< ds.p[k] << "\t\t" << ds.p[h] << endl;
+		j++; k++; h++;
+	}
+	while( k < index3 && h < ds.size){
+		o << left << setw(24) << ". . . " << "\t\t" <<  setw(24) << ". . . " << "\t\t"
+		<< ds.p[k] << "\t\t" << ds.p[h] << endl;
+		k++; h++;
+	}
+	// for(int i = 0; i < ds.size; ++i){
+	// 	o << ds.p[i] << endl;
+	// }
 	return o;
 }
 void QLP::doc_file(ifstream& filePhong){

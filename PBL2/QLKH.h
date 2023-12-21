@@ -14,6 +14,8 @@ class QLKH
 		Khach& operator[](const int&);
 		friend ostream& operator<<(ostream&, const QLKH&);
 		void Add(const Khach&);
+		void Remove(int maKH);
+		int getSize();
 };
 
 #endif
